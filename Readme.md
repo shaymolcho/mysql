@@ -818,11 +818,11 @@ replaced, even those contained in comments and strings.
 
 Different value types are escaped differently, here is how:
 
-* Numbers are left untouched
+* Numbers are left untouched.
 * Booleans are converted to `true` / `false`
-* Date objects are converted to `'YYYY-mm-dd HH:ii:ss'` strings
+* Date objects are converted to `'YYYY-mm-dd HH:ii:ss'` strings.
 * Buffers are converted to hex strings, e.g. `X'0fa5'`
-* Strings are safely escaped
+* Strings are safely escaped.
 * Arrays are turned into list, e.g. `['a', 'b']` turns into `'a', 'b'`
 * Nested arrays are turned into grouped lists (for bulk inserts), e.g. `[['a',
   'b'], ['c', 'd']]` turns into `('a', 'b'), ('c', 'd')`
